@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"flamegas\startup_stm32f103x6.o"
+"flamegas\lcd_txt.o"
+"flamegas\main.o"
+"flamegas\stm32f1xx_it.o"
+"flamegas\stm32f1xx_hal_msp.o"
+"flamegas\stm32f1xx_hal_gpio_ex.o"
+"flamegas\stm32f1xx_hal_tim.o"
+"flamegas\stm32f1xx_hal_tim_ex.o"
+"flamegas\stm32f1xx_hal.o"
+"flamegas\stm32f1xx_hal_rcc.o"
+"flamegas\stm32f1xx_hal_rcc_ex.o"
+"flamegas\stm32f1xx_hal_gpio.o"
+"flamegas\stm32f1xx_hal_dma.o"
+"flamegas\stm32f1xx_hal_cortex.o"
+"flamegas\stm32f1xx_hal_pwr.o"
+"flamegas\stm32f1xx_hal_flash.o"
+"flamegas\stm32f1xx_hal_flash_ex.o"
+"flamegas\stm32f1xx_hal_exti.o"
+"flamegas\system_stm32f1xx.o"
+--strict --scatter "FlameGas\FlameGas.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FlameGas.map" -o FlameGas\FlameGas.axf
